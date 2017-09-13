@@ -1,0 +1,19 @@
+
+Kadane`s Algo :
+
+msf = 0
+meh = 0
+a[i]={};
+
+meh=meh+a[i];
+if(meh<0)
+meh=0;
+
+if(meh>msf)
+msf=meh;
+
+
+With dynamic programing method :
+
+meh=max(meh,a[i]+meh)
+msf=max(msf,meh)
